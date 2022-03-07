@@ -19,16 +19,16 @@ const ContainerCode = styled.section`
   width: calc(100vw - 10vw);
   max-width: max-content;
   min-width: 100%;
-<<<<<<< HEAD
+
   box-shadow: 4px 4px 15px 0 rgb(36 37 38 / 8%);
-=======
->>>>>>> 0f4110a1759d9d952d629ad9ff35142ebc669e94
+
   pre {
     max-width: max-content;
     overflow-x: auto;
     tab-size: 1;
 
     padding: 0.5em 0;
+
     font-size: 15px;
   }
   code {
@@ -103,7 +103,6 @@ export default function Code({ pathFile, type, code }) {
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
-
         integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg=="
         crossOrigin="anonymous"
         referrerpolicy="no-referrer"
@@ -114,7 +113,6 @@ export default function Code({ pathFile, type, code }) {
           <span>{type}</span>
           <ButtonCopyClipboard textCodeCopy={code} />
           <button onClick={() => alert("Just Subscribers")}>
-
             <TgogleThemeCodeIcon />
           </button>
         </div>
