@@ -20,9 +20,12 @@ const FooterSocials = styled.div`
   margin-top: 3em;
   justify-content: space-between;
   p {
-    color: rgb(51, 65, 85);
+    color: ${({ theme }) => theme.colorTextSubtitle};
     margin: 21.4px 0;
     font-size: 16px;
+  }
+  a {
+    color: ${({ theme }) => theme.colorTextSubtitle};
   }
   div {
     display: flex;

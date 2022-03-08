@@ -7,8 +7,6 @@ import Subtitle from "../../components/Titles/Subtitle";
 import Link from "../../components/Parrafos/Link";
 import P from "../../components/Parrafos/P";
 
-
-
 import Space from "../../components/Parrafos/Space";
 import Button from "../../components/Buttons/Button";
 import Footer from "../../components/Footer/Footer";
@@ -27,7 +25,6 @@ import {
   ImageWrapper,
   Desbordamiento,
 } from "../../styles/PageStyles/AboutPageStyles";
-
 
 export default function About({ onToggleTheme }) {
   return (
@@ -87,12 +84,11 @@ export default function About({ onToggleTheme }) {
           </P>
 
           <Space />
-          <Title size={36}>My tools</Title>
-          
+          <Title size={36}>Tools</Title>
+
           <UseTegnologies />
           <Space />
           <WorkExperience />
-
 
           <Space />
           <Title size={32}>I love to share my knowledge through writing.</Title>
