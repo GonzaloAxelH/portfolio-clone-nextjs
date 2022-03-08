@@ -16,7 +16,6 @@ export const server = dev
   ? "http://localhost:3000"
   : "https://your_deployment.server.com";
 
-
 const HomeContainer = styled.section`
   height: 100%;
   margin: 5em;
@@ -37,7 +36,7 @@ const HomeContainer = styled.section`
 const SocialsContainer = styled.div`
   position: relative;
   top: 3em;
-  left: 2em;
+  left: 0.5em;
   @media (max-width: 768px) {
     display: none;
   }
@@ -52,7 +51,6 @@ export default function Home({ onToggleTheme }) {
         <Banner />
 
         <Space />
-
 
         <Title size={32}>I love to share my knowledge through writing.</Title>
 

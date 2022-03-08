@@ -73,7 +73,15 @@ export default function NavbarMobile({ handleCloseClick }) {
       <li>
         <Link href="#">
           <a>
-            <span>Tutorials</span>
+            <span>Videos</span>
+            <Beta>New Beta</Beta>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="#">
+          <a>
+            <span>Live Coding</span>
             <Beta>New Beta</Beta>
           </a>
         </Link>

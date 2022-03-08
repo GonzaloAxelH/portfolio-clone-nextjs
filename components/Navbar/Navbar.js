@@ -17,29 +17,32 @@ const Navbar = () => {
         <Link href="/about">
           <a>
             <TextLink select={pathName === "/about"}>About</TextLink>
-
-            <Tag>Beta</Tag>
           </a>
         </Link>
 
         <Link href="/proyects">
           <a>
             <TextLink select={pathName === "/proyects"}>Proyects</TextLink>
-
-            <Tag>Beta</Tag>
           </a>
         </Link>
         <Link href="/blog">
           <a>
             <TextLink select={pathName === "/blog"}>Blog</TextLink>
-
-            <Tag>Beta</Tag>
           </a>
         </Link>
         <Link href="#">
           <a>
-            <TextLink select={pathName === "/stats"}>Videos</TextLink>
-            <Tag>Beta</Tag>
+            <TextLink select={pathName === "/stats"}>
+              Videos
+              <Tag>Beta</Tag>
+            </TextLink>
+          </a>
+        </Link>
+        <Link href="#">
+          <a>
+            <TextLink select={pathName === "/stats"}>
+              Live Coding <Tag>Beta</Tag>
+            </TextLink>
           </a>
         </Link>
       </ul>

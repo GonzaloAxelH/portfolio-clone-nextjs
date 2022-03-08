@@ -13,6 +13,19 @@ import {
 const Articles = [
   {
     id: 1,
+    title: "Google Keep Clone React Firebase 9 ",
+    tags: ["Vanilla JS", "Wikipedia API"],
+    imgUrl: "imagesproyect/google-keep.jpg",
+    link: "https://github.com/GonzaloAxelH/google-keep-clone",
+
+    percentaje: "100%",
+    state: "completed",
+    level: "JUNIOR",
+    linkGit: "#",
+    date: "December 21, 2021",
+  },
+  {
+    id: 1,
     title:
       "Search App Vanilla Js Buscador basico con seleccion de idioma Español Ingles",
     tags: ["Vanilla JS", "Wikipedia API"],

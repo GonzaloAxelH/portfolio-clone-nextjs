@@ -18,8 +18,14 @@ const ArticleContainer = styled.div`
   }
 `;
 const WrapperImg = styled.div`
-  &:hover {
-    filter: opacity(0.75);
+  /* Opacity #1 */
+  .hover11 figure img {
+    opacity: 1;
+    -webkit-transition: 0.05s ease-in-out;
+    transition: 0.05s ease-in-out;
+  }
+  .hover11 figure:hover img {
+    opacity: 0.8;
   }
 `;
 const ArticleFooter = styled.div`
@@ -106,17 +112,26 @@ export default function Article({
 
   return (
     <ArticleContainer>
-      <Image
-        blurDataURL={`/${state !== "pending" ? urlImg : "build.jpg"}`}
-        src={`/${state !== "pending" ? urlImg : "build.jpg"}`}
-        alt="name"
-        width="100%"
-        height="120%"
-        layout="responsive"
-        objectFit="cover"
-        placeholder="blur"
-      />
-
+      <Link href={link}>
+        <a target="_blank">
+          <WrapperImg>
+            <div className="hover11">
+              <figure>
+                <Image
+                  blurDataURL={`/${state !== "pending" ? urlImg : "build.jpg"}`}
+                  src={`/${state !== "pending" ? urlImg : "build.jpg"}`}
+                  alt="name"
+                  width="100%"
+                  height="140%"
+                  layout="responsive"
+                  objectFit="cover"
+                  placeholder="blur"
+                />
+              </figure>
+            </div>
+          </WrapperImg>
+        </a>
+      </Link>
       <Link href={link}>
         <a target="_blank">
           <Title>
