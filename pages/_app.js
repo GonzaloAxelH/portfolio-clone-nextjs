@@ -8,7 +8,9 @@ import useDarkMode from "use-dark-mode";
 import { Provider } from "react-redux";
 import store from "../data/redux/store";
 import { loadPosts } from "../data/redux/actions";
+import { savePosts } from "../data/firebase/postData";
 
+savePosts();
 store.dispatch(loadPosts());
 store.subscribe(() => {
   console.log(store.getState());
@@ -43,7 +45,6 @@ const WrappedApp = ({ Component, pageProps }) => {
         )}
       </ThemeProvider>
     </Provider>
-
   );
 };
 

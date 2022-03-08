@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../Layout";
@@ -39,7 +38,6 @@ const Blog = (props) => {
 
   const handleToggleClick = () => {
     alert("Just Subscribers");
-
   };
 
   return (
@@ -105,7 +103,6 @@ const Blog = (props) => {
                 <Footer />
               </>
             ) : null}
-
           </Contenido>
         </div>
       </ContainerBlog>
@@ -113,12 +110,10 @@ const Blog = (props) => {
   );
 };
 
-
 Blog.getInitialProps = (context) => {
   const { id } = context.query;
   console.log({ id });
   return { id };
 };
-
 
 export default Blog;

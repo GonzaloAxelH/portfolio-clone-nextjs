@@ -1,4 +1,3 @@
-
 import Code from "../../../components/BlogComponents/CodeComponent/Code";
 import Rlink from "../../../components/BlogComponents/Links/Rlink";
 import {
@@ -10,7 +9,6 @@ import {
 import {
   Label,
   ListaPasos,
-  
   Parrafo,
   SubtitleBlog,
 } from "../../../components/BlogComponents/BlogPageStyles";
@@ -42,7 +40,6 @@ const BlogComponent = (
         </ul>
       </ListaPasos>
     </section>
-
 
     <section id="1">
       <SubtitleBlog>1.-Creando la base de datos en Mysql</SubtitleBlog>
@@ -104,6 +101,5 @@ const BlogComponent = (
     <Code code={PHP_CODE} type="php" pathFile="basic-rest-api/" />
   </>
 );
-
 
 export default BlogComponent;

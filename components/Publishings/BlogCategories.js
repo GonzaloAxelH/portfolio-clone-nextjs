@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Title from "../../components/Titles/Title";
+import { categorys } from "../../data/Blogs";
 import { BlogsWrittings } from "../../data/Blogs";
 import Link from "next/link";
 import Image from "next/image";
@@ -132,25 +132,32 @@ const Article = styled.div`
   padding: 1em 0;
 `;
 export default function BlogCategories() {
-  const [number, setNumberSelect] = React.useState(0);
+  const [categoryName, setCategoryName] = useState("All");
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    if (categoryName === "All") {
+      setPosts(BlogsWrittings);
+    } else {
+      setPosts(BlogsWrittings.filter((post) => post.category === categoryName));
+    }
+    console.log(categoryName);
+  }, [categoryName]);
   return (
     <ContainerBlogCategories>
       <HeaderSelectCategories>
-        <NavOptions setNumberSelect={setNumberSelect} number={number} />
+        <SelectCategory getCategory={(category) => setCategoryName(category)} />
       </HeaderSelectCategories>
       <ContentDinamic>
         <ListArticles>
-          {BlogsWrittings.map((el, index) => {
+          {posts.map((el, index) => {
             return (
               <Article key={index}>
                 <Link href={`/blog/${el.id}`}>
                   <a>
                     <ImageWrapper>
                       <Image
-                      
                         blurDataURL={el.imgUrl}
                         src={el.imgUrl}
-                     
                         alt="name"
                         width="100%"
                         height="120%"
@@ -169,7 +176,6 @@ export default function BlogCategories() {
                 </Link>
 
                 <Date>{el.date}</Date>
-
               </Article>
             );
           })}
@@ -179,39 +185,68 @@ export default function BlogCategories() {
   );
 }
 
-function NavOptions({ setNumberSelect, number }) {
+function SelectCategory({ getCategory }) {
+  const [category, setCategory] = useState("All");
+
+  const changeCategory = (cat) => {
+    setCategory(cat);
+    getCategory(cat);
+  };
   return (
     <ul>
-      <ItemCategory active={number === 0} onClick={() => setNumberSelect(0)}>
-        <span>All</span>
+      <ItemCategory
+        active={category === categorys.ALL}
+        onClick={() => changeCategory(categorys.ALL)}
+      >
+        <span>{categorys.ALL}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 1} onClick={() => setNumberSelect(1)}>
-        <span>PROGRAMMING</span>
+      <ItemCategory
+        active={category === categorys.LARAVEL}
+        onClick={() => changeCategory(categorys.LARAVEL)}
+      >
+        <span>{categorys.LARAVEL}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 2} onClick={() => setNumberSelect(2)}>
-        <span>DESING</span>
+      <ItemCategory
+        active={category === categorys.NODE}
+        onClick={() => changeCategory(categorys.NODE)}
+      >
+        <span>{categorys.NODE}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 3} onClick={() => setNumberSelect(3)}>
-        <span>CAREER</span>
+      <ItemCategory
+        active={category === categorys.NEXTJS}
+        onClick={() => changeCategory(categorys.NEXTJS)}
+      >
+        <span>{categorys.NEXTJS}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 4} onClick={() => setNumberSelect(4)}>
-        <span>PERSONAL</span>
+      <ItemCategory
+        active={category === categorys.CSS}
+        onClick={() => changeCategory(categorys.CSS)}
+      >
+        <span>{categorys.CSS}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 5} onClick={() => setNumberSelect(5)}>
-        <span>REACT</span>
+      <ItemCategory
+        active={category === categorys.PERSONAL}
+        onClick={() => changeCategory(categorys.PERSONAL)}
+      >
+        <span>{categorys.PERSONAL}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 6} onClick={() => setNumberSelect(6)}>
-        <span>JAVASCRIPT</span>
+      <ItemCategory
+        active={category === categorys.PRODUCTIVITY}
+        onClick={() => changeCategory(categorys.PRODUCTIVITY)}
+      >
+        <span>{categorys.PRODUCTIVITY}</span>
       </ItemCategory>
-
-      <ItemCategory active={number === 7} onClick={() => setNumberSelect(7)}>
-        <span>PRODUCTIVITY</span>
+      <ItemCategory
+        active={category === categorys.JAVASCRIPT}
+        onClick={() => changeCategory(categorys.JAVASCRIPT)}
+      >
+        <span>{categorys.JAVASCRIPT}</span>
+      </ItemCategory>
+      <ItemCategory
+        active={category === categorys.WEB3}
+        onClick={() => changeCategory(categorys.WEB3)}
+      >
+        <span>{categorys.WEB3}</span>
       </ItemCategory>
     </ul>
   );

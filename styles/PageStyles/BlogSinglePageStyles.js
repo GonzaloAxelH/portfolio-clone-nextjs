@@ -23,6 +23,7 @@ export const Contenido = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 1000px;
+  min-height: 100vh;
   margin: 0 25em 0 6em;
   @media (max-width: 1160px) {
     margin: 0 1em;

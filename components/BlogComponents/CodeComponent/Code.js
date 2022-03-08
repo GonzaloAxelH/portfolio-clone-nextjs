@@ -7,7 +7,10 @@ import javascript from "highlight.js/lib/languages/javascript";
 import TgogleThemeCodeIcon from "../../Icons/TgogleThemeCodeIcon";
 import { useRef } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-
+import {
+  CodeWrapperDark,
+  CodeWrapperLight,
+} from "../../../styles/CodeStyles/CodeWrapper";
 hljs.configure({ tabReplace: " " });
 hljs.registerLanguage("javascript", javascript);
 
@@ -90,8 +93,7 @@ const Headercode = styled.div`
   }
 `;
 export default function Code({ pathFile, type, code }) {
-  const [themeCode, setThemeCode] = useState(false);
-
+  const [themeToogle, setThemeTogle] = useState(true);
   const refCode = useRef();
   useEffect(() => {
     //hljs.initHighlighting();
@@ -99,30 +101,49 @@ export default function Code({ pathFile, type, code }) {
   });
 
   return (
-    <ContainerCode colorFondo={"#2d2b57"}>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css"
-        integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg=="
-        crossOrigin="anonymous"
-        referrerpolicy="no-referrer"
-      />
-      <Headercode>
-        <p>{pathFile}</p>
-        <div>
-          <span>{type}</span>
-          <ButtonCopyClipboard textCodeCopy={code} />
-          <button onClick={() => alert("Just Subscribers")}>
-            <TgogleThemeCodeIcon />
-          </button>
-        </div>
-      </Headercode>
-      <pre>
-        <code ref={refCode} className={`${type ? type : "js"}`}>
-          {code}
-        </code>
-      </pre>
-    </ContainerCode>
+    <>
+      {themeToogle ? (
+        <CodeWrapperDark>
+          <ContainerCode colorFondo={"#202746"}>
+            <Headercode>
+              <p>{pathFile}</p>
+              <div>
+                <span>{type}</span>
+                <ButtonCopyClipboard textCodeCopy={code} />
+                <button onClick={() => setThemeTogle(!themeToogle)}>
+                  <TgogleThemeCodeIcon />
+                </button>
+              </div>
+            </Headercode>
+            <pre>
+              <code ref={refCode} className={`${type ? type : "js"}`}>
+                {code}
+              </code>
+            </pre>
+          </ContainerCode>
+        </CodeWrapperDark>
+      ) : (
+        <CodeWrapperLight>
+          <ContainerCode colorFondo={"#f5f7ff"}>
+            <Headercode>
+              <p>{pathFile}</p>
+              <div>
+                <span>{type}</span>
+                <ButtonCopyClipboard textCodeCopy={code} />
+                <button onClick={() => setThemeTogle(!themeToogle)}>
+                  <TgogleThemeCodeIcon />
+                </button>
+              </div>
+            </Headercode>
+            <pre>
+              <code ref={refCode} className={`${type ? type : "js"}`}>
+                {code}
+              </code>
+            </pre>
+          </ContainerCode>
+        </CodeWrapperLight>
+      )}
+    </>
   );
 }
 
