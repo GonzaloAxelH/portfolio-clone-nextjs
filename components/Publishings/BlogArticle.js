@@ -92,7 +92,7 @@ const ImageWrapper = styled.div`
   .hover14 figure::before {
     position: absolute;
     top: 0;
-    left: -80%;
+    left: -90%;
     z-index: 2;
     display: block;
     content: "";

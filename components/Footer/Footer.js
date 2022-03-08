@@ -8,8 +8,7 @@ import TweetIcon from "../Icons/TweetIcon";
 import Link from "next/link";
 const FooterContainer = styled.div`
   position: relative;
-
-  background-color: ${({ theme }) => theme.colorFondo};
+  background: transparent;
   margin: 3em 0;
   width: 100%;
   z-index: 100;

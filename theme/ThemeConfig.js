@@ -3,7 +3,7 @@ export const lightTheme = {
   colorFondoLabelCode: "#f1f5f9",
   colorFondoReactions: "#f1f5f9",
   colorFondo: "rgb(255, 255, 255)",
-  colorFondoBlur: "rgb(255, 255, 255, 0.4)",
+  colorFondoBlur: "rgb(255, 255, 255,1)",
   colorText: "#111827",
   colorTextGray: "#999999",
   colorTextParrafoBlog: "rgb(54, 52, 77)",
@@ -19,6 +19,7 @@ export const lightTheme = {
   colorTurkeza: "#2dd4bf",
   colorTextParrafo: "#111827",
   colorTextParrafo2: "#334155",
+  bg: "/bg-white.jpg",
 };
 
 export const darkTheme = {
@@ -41,6 +42,7 @@ export const darkTheme = {
   colorTurkeza: "#2dd4bf",
   colorTextParrafo: "#cbd5e1",
   colorTextParrafo2: "#cbd5e1",
+  bg: "/bg.jpg",
 };
 
 export const GlobalStyles = createGlobalStyle`

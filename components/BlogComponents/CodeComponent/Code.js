@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import useDarkMode from "use-dark-mode";
 import styled from "styled-components";
 import CopyIcon from "../../Icons/CopyIcon";
 import hljs from "highlight.js";
@@ -93,7 +94,9 @@ const Headercode = styled.div`
   }
 `;
 export default function Code({ pathFile, type, code }) {
-  const [themeToogle, setThemeTogle] = useState(true);
+  const darkmode = useDarkMode(true);
+  const [themeToogle, setThemeTogle] = useState(darkmode.value);
+  console.log(darkmode.value);
   const refCode = useRef();
   useEffect(() => {
     //hljs.initHighlighting();
@@ -104,7 +107,7 @@ export default function Code({ pathFile, type, code }) {
     <>
       {themeToogle ? (
         <CodeWrapperDark>
-          <ContainerCode colorFondo={"#202746"}>
+          <ContainerCode colorFondo={"#1A1D24"}>
             <Headercode>
               <p>{pathFile}</p>
               <div>

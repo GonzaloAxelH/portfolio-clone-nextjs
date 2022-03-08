@@ -5,7 +5,7 @@ import FormContact from "../Forms/FormContact";
 const UpdatesFormContainer = styled.div`
   border: 1px solid ${({ theme }) => theme.colorBorder};
   border-radius: 8px;
-  background: ${({ theme }) => theme.colorFondoUpdateForm};
+  background: transparent;
 
   margin: 16px 0;
   padding: 24px;
