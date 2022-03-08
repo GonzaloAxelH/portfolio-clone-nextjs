@@ -1,6 +1,5 @@
 import Layout from "../Layout";
 
-
 import Title from "../../components/Titles/Title";
 import Subtitle from "../../components/Titles/Subtitle";
 import Space from "../../components/Parrafos/Space";
@@ -19,7 +18,6 @@ import {
   TitleArticle,
   Contact,
 } from "../../styles/PageStyles/BlogPageStyles";
-
 
 const Blog = ({ onToggleTheme }) => {
   return (
@@ -64,6 +62,5 @@ const Blog = ({ onToggleTheme }) => {
     </Layout>
   );
 };
-
 
 export default Blog;
