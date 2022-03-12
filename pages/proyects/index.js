@@ -1,14 +1,14 @@
 import React from "react";
 import Space from "../../components/Parrafos/Space";
 import Image from "next/image";
-import styled from "styled-components";
+
 import Button from "../../components/Buttons/Button";
 import P from "../../components/Parrafos/P";
 import Publishings from "../../components/Publishings/Publishings";
 import Footer from "../../components/Footer/Footer";
 import Title from "../../components/Titles/Title";
 import Subtitle from "../../components/Titles/Subtitle";
-
+import { useRouter } from "next/router";
 import Layout from "../Layout";
 import {
   ProyectsContainer,
@@ -16,9 +16,12 @@ import {
   ItemProyect,
   ProyectInfo,
   ImageWrapper,
+  State,
 } from "../../styles/PageStyles/ProyectsPageStyles";
+import Link from "next/link";
 
 export default function Proyects({ onToggleTheme }) {
+  const router = useRouter();
   return (
     <Layout onToggleTheme={onToggleTheme}>
       <ProyectsContainer>
@@ -28,76 +31,44 @@ export default function Proyects({ onToggleTheme }) {
         </Titles>
         <ItemProyect>
           <ProyectInfo>
-            <Title size={38}>Pomegradient</Title>
-            <P>
-              Pomegradient is a web-based gradient solutiuon currently in beta
-              that allows you to find, save and craft gradients with a creative
-              community!
+            <Link href="https://fastfood-sigma.vercel.app/">
+              <a target="_blank">
+                <Title size={38}>
+                  Fastfood <State>development</State>
+                </Title>
+              </a>
+            </Link>
+            <P size="16px">
+              Proyecto de un sistema web completo de venta de comida rapida
+              online, integrado con una plataforma de pagos en linea para que
+              los clientes puedan pagar en linea y recibir su pedido en su
+              casa.Ademas de esto, el sistema tiendra una plataforma de chat
+              para que los clientes puedan comunicarse con el personal de la
+              empresa.Tambien se implementara los pedidos en tiempo real usando
+              Redis y PostgressSql como almacenamiento.
             </P>
-            <Button type="primary">Visit Pomegradient</Button>
-          </ProyectInfo>
 
-          <ImageWrapper>
-            <Image
-              blurDataURL={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638221102%2Fmbpro_bundle_site_zg8jbe.png&w=3840&q=75`}
-              src={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638221102%2Fmbpro_bundle_site_zg8jbe.png&w=3840&q=75`}
-              alt="name"
-              width="100%"
-              height={420}
-              layout="fill"
-              objectFit="contain"
-              placeholder="blur"
-            />
-          </ImageWrapper>
+            <Link href="https://fastfood-sigma.vercel.app/">
+              <a target="_blank">
+                <Button type="primary">Visita la web</Button>
+              </a>
+            </Link>
+          </ProyectInfo>
+          <Link href="https://fastfood-sigma.vercel.app/">
+            <a target="_blank">
+              <ImageWrapper>
+                <Image
+                  blurDataURL={`/imagesproyect/fastfood-preview.png`}
+                  src={`/imagesproyect/fastfood-preview.png`}
+                  alt="name"
+                  layout="fill"
+                  placeholder="blur"
+                />
+              </ImageWrapper>
+            </a>
+          </Link>
         </ItemProyect>
 
-        <ItemProyect>
-          <ProyectInfo>
-            <Title size={38}>Pomegradient</Title>
-            <P>
-              Pomegradient is a web-based gradient solutiuon currently in beta
-              that allows you to find, save and craft gradients with a creative
-              community!
-            </P>
-            <Button type="primary">Visit Pomegradient</Button>
-          </ProyectInfo>
-          <ImageWrapper>
-            <Image
-              blurDataURL={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638225420%2Fpomegradient_ipadpro_vhapql.png&w=2048&q=75`}
-              src={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638225420%2Fpomegradient_ipadpro_vhapql.png&w=2048&q=75`}
-              alt="name"
-              width="100%"
-              height={420}
-              layout="fill"
-              objectFit="cover"
-              placeholder="blur"
-            />
-          </ImageWrapper>
-        </ItemProyect>
-
-        <ItemProyect>
-          <ProyectInfo>
-            <Title size={38}> Pomegradient</Title>
-            <P>
-              Pomegradient is a web-based gradient solutiuon currently in beta
-              that allows you to find, save and craft gradients with a creative
-              community!
-            </P>
-            <Button type="primary">Visit Pomegradient</Button>
-          </ProyectInfo>
-          <ImageWrapper>
-            <Image
-              blurDataURL={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638226232%2Fnglimeade_ipadpro_blliap.png&w=1920&q=75`}
-              src={`https://braydoncoyer.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fbraydoncoyer%2Fimage%2Fupload%2Fv1638226232%2Fnglimeade_ipadpro_blliap.png&w=1920&q=75`}
-              alt="name"
-              width="100%"
-              height={420}
-              layout="fill"
-              objectFit="contain"
-              placeholder="blur"
-            />
-          </ImageWrapper>
-        </ItemProyect>
         <Space />
         <Title size={32}>I love to share my knowledge through writing.</Title>
         <P>Check out a few of my most recent publishings.</P>

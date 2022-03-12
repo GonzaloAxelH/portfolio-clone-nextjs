@@ -4,6 +4,7 @@ import { categorys } from "../../data/Blogs";
 import { BlogsWrittings } from "../../data/Blogs";
 import Link from "next/link";
 import Image from "next/image";
+import CheckIcon from "../Icons/CheckIcon";
 //containers
 const HeaderSelectCategories = styled.div`
   max-width: 90vw;
@@ -130,7 +131,7 @@ const ImageWrapper = styled.div`
   .hover14 figure::before {
     position: absolute;
     top: 0;
-    left: -80%;
+    left: -85%;
     z-index: 2;
     display: block;
     content: "";
@@ -150,8 +151,8 @@ const ImageWrapper = styled.div`
     transform: skewX(-25deg);
   }
   .hover14 figure:hover::before {
-    -webkit-animation: shine 0.75s;
-    animation: shine 0.75s;
+    -webkit-animation: shine 0.6s;
+    animation: shine 0.6s;
   }
   @-webkit-keyframes shine {
     100% {
@@ -167,6 +168,30 @@ const ImageWrapper = styled.div`
 const Article = styled.div`
   padding: 1em 0;
 `;
+
+const Read = styled.span`
+  display: flex;
+  align-items: center;
+  svg {
+    color: ${(props) => props.stateColor};
+  }
+  span {
+    color: ${(props) => props.stateColor};
+    font-size: 13px;
+  }
+  .check {
+    margin-right: 1em;
+  }
+`;
+const ArticleFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 1em;
+  color: ${({ theme }) => theme.colorTextSubtitle};
+`;
+
 export default function BlogCategories() {
   const [categoryName, setCategoryName] = useState("All");
   const [posts, setPosts] = useState([]);
@@ -198,7 +223,7 @@ export default function BlogCategories() {
                             src={el.imgUrl}
                             alt="name"
                             width="100%"
-                            height="120%"
+                            height="140%"
                             layout="responsive"
                             objectFit="cover"
                             placeholder="blur"
@@ -214,8 +239,16 @@ export default function BlogCategories() {
                     <TitleArticle>{el.title}</TitleArticle>
                   </a>
                 </Link>
-
-                <Date>{el.date}</Date>
+                <ArticleFooter>
+                  <span>{el.date}</span>
+                  <Read stateColor={`#0d9488`}>
+                    <CheckIcon />
+                    <span className="check">
+                      Read
+                      <span> </span>
+                    </span>
+                  </Read>
+                </ArticleFooter>
               </Article>
             );
           })}

@@ -163,7 +163,7 @@ export default function BlogArticle(props) {
       </Link>
       <ArticleFooter>
         <span>{date}</span>
-        <Read stateColor={stateApp.completed.color}>
+        <Read stateColor={`#0d9488`}>
           <CheckIcon />
           <span className="check">
             Read

@@ -12,10 +12,6 @@ const ArticleContainer = styled.div`
   img {
     border-radius: 12px;
   }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
 `;
 const WrapperImg = styled.div`
   /* Opacity #1 */

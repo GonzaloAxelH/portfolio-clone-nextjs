@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Parrafo = styled.p`
   color: ${({ theme }) => theme.colorTextParrafo};
-  font-size: 20px;
+  font-size: ${(props) => props.size};
   line-height: 26px;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -14,9 +14,9 @@ const Parrafo = styled.p`
   padding-bottom: ${(props) => (props.pb ? props.pb : "20px")};
 `;
 
-export default function P({ pb, pt, children }) {
+export default function P({ size, pb, pt, children }) {
   return (
-    <Parrafo pt={pt} pb={pb}>
+    <Parrafo size={size ? size : "19px"} pt={pt} pb={pb}>
       {children}
     </Parrafo>
   );
