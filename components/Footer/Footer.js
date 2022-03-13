@@ -7,8 +7,10 @@ import IconCodepen from "../Icons/IconCodepen";
 import TweetIcon from "../Icons/TweetIcon";
 import Link from "next/link";
 const FooterContainer = styled.div`
+  padding: 1em;
+
   position: relative;
-  background: transparent;
+
   margin: 3em 0;
   width: 100%;
   z-index: 100;

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Form = styled.form`
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
   width: 100%;
   position: relative;
   display: flex;

@@ -7,6 +7,8 @@ import Image from "next/image";
 import CheckIcon from "../Icons/CheckIcon";
 //containers
 const HeaderSelectCategories = styled.div`
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
   max-width: 90vw;
   overflow: auto;
   ul {

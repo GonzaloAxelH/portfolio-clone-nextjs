@@ -4,8 +4,9 @@ import FormContact from "../Forms/FormContact";
 
 const UpdatesFormContainer = styled.div`
   border: 1px solid ${({ theme }) => theme.colorBorder};
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: 8px;
-  background: transparent;
 
   margin: 16px 0;
   padding: 24px;

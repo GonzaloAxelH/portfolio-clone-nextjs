@@ -23,7 +23,8 @@ const Body = styled.body`
     background: url(${(props) => props.theme.bg});
     background-size: cover;
     background-position: 100% 6%;
-    filter: blur(8px);
+    filter: blur(0px);
+
     transform: scale(1.1);
     z-index: -1;
   }

@@ -15,7 +15,6 @@ export const Tag = styled.span`
 `;
 
 export const Nav = styled.nav`
-  background: transparent;
   display: flex;
   ul {
     display: flex;
