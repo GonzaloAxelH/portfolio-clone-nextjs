@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 export const lightTheme = {
   colorFondoLabelCode: "#f1f5f9",
-  colorFondoReactions: "#f1f5f9",
+  colorFondoReactions: "#f5f7ff",
   colorFondo: "rgb(255, 255, 255)",
   colorFondoBlur: "rgb(255, 255, 255,1)",
   colorText: "#111827",
@@ -24,7 +24,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   colorFondoLabelCode: "#1e293b",
-  colorFondoReactions: "#1e293b",
+  colorFondoReactions: "#150023",
   colorHover: "rgb(30, 41, 59)",
   colorFondo: "rgb(17, 24, 39)",
   colorFondoBlur: "rgb(17, 24, 39,1)",

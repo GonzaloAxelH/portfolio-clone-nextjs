@@ -13,9 +13,8 @@ const Main = styled.main`
 const Body = styled.body`
   background-repeat: no-repeat;
   background-size: cover;
-
   &:before {
-    content: "wsrfgwergwer";
+    content: "";
     position: fixed;
     left: 0;
     width: 100vw;
@@ -24,7 +23,6 @@ const Body = styled.body`
     background-size: cover;
     background-position: 100% 6%;
     filter: blur(0px);
-
     transform: scale(1.1);
     z-index: -1;
   }

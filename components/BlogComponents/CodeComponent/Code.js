@@ -107,7 +107,7 @@ export default function Code({ pathFile, type, code }) {
     <>
       {themeToogle ? (
         <CodeWrapperDark>
-          <ContainerCode colorFondo={"#1A1D24"}>
+          <ContainerCode colorFondo={"#150023"}>
             <Headercode>
               <p>{pathFile}</p>
               <div>

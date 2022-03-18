@@ -4,6 +4,7 @@ const ReactionWrapper = styled.div`
   max-width: 250px;
   position: relative;
   background: ${({ theme }) => theme.colorFondoReactions};
+
   border-radius: 12px;
   padding: 1em 0;
   display: flex;
@@ -36,6 +37,8 @@ const ReactionWrapper = styled.div`
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
+
+  box-shadow: 4px 4px 15px 0 rgb(36 37 38 / 8%);
 `;
 
 function Reaction({ type, icon, cant, onClick }) {
