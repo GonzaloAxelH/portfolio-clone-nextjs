@@ -31,7 +31,7 @@ export default function Proyects({ onToggleTheme }) {
         </Titles>
         <ItemProyect>
           <ProyectInfo>
-            <Link href="https://fastfood-sigma.vercel.app/">
+            <Link href="https://fastfoodilo.vercel.app/fastfood">
               <a target="_blank">
                 <Title size={38}>
                   Fastfood <State>development</State>
@@ -48,13 +48,13 @@ export default function Proyects({ onToggleTheme }) {
               Redis y PostgressSql como almacenamiento.
             </P>
 
-            <Link href="https://fastfood-sigma.vercel.app/">
+            <Link href="https://fastfoodilo.vercel.app/fastfood">
               <a target="_blank">
                 <Button type="primary">Visita la web</Button>
               </a>
             </Link>
           </ProyectInfo>
-          <Link href="https://fastfood-sigma.vercel.app/">
+          <Link href="https://fastfoodilo.vercel.app/fastfood">
             <a target="_blank">
               <ImageWrapper>
                 <Image
