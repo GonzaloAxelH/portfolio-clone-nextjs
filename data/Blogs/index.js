@@ -1,6 +1,6 @@
 import BlogRestApiLaravel9 from "./Blog-rest-api-laravel/Blog";
 import BlogjwtNode from "./Blog-jwt-node/Blog";
-import BlogWeb3Etherium from "./Blog-web3-etherium/Blog";
+
 export const categorys = {
   LARAVEL: "Laravel",
   NODE: "Node",
@@ -17,21 +17,6 @@ export const categorys = {
 };
 
 export const BlogsWrittings = [
-  {
-    id: "ev78v78v789v89v909",
-    title: "Introduccion a Etherium Development",
-    type: "Infomativo",
-    category: categorys.WEB3,
-    date: "Mar 5, 2022",
-    autor: "Gonzalo Axel Valdez",
-    duration: "5 min de Lectura",
-    link: "#",
-    description:
-      "Esta introducción a Ethereum se publicó originalmente en Sitio web de Bruno's Bitfalls, y se reproduce aquí con permiso.",
-    imgUrl: "/imagesblog/web3/etherium.jpg",
-    reactions: [0, 0, 0, 0],
-    blogJsx: BlogWeb3Etherium,
-  },
   {
     id: "KHQSrInRrzW2PcZZa4dx",
     title: "API REST Basico en laravel 9 con base de datos Mysql",

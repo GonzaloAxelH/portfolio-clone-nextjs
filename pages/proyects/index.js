@@ -41,11 +41,7 @@ export default function Proyects({ onToggleTheme }) {
             <P size="16px">
               Proyecto de un sistema web completo de venta de comida rapida
               online, integrado con una plataforma de pagos en linea para que
-              los clientes puedan pagar en linea y recibir su pedido en su
-              casa.Ademas de esto, el sistema tiendra una plataforma de chat
-              para que los clientes puedan comunicarse con el personal de la
-              empresa.Tambien se implementara los pedidos en tiempo real usando
-              Redis y PostgressSql como almacenamiento.
+              los clientes puedan pagar en linea y recibir su pedido en su casa.
             </P>
 
             <Link href="https://fastfoodilo.vercel.app/fastfood">
@@ -72,7 +68,7 @@ export default function Proyects({ onToggleTheme }) {
         <Space />
         <Title size={32}>I love to share my knowledge through writing.</Title>
         <P>Check out a few of my most recent publishings.</P>
-        <Publishings limit={6} />
+        <Publishings limit={30} />
         <Space />
         <Footer />
       </ProyectsContainer>

@@ -55,8 +55,11 @@ export default function UpdatesFrom() {
         As a thank you, Ill also send you a <span>FREE CSS</span> tutorial!
       </p>
       <p>No spam - unsubscribe at any time!</p>
+      <span style={{ color: "red", fontStyle: "italic" }}>
+        * Not found for now
+      </span>
       <FormContact />
-      <p>134 subscribers – 3 issues</p>
+      <p> 0 subscribers – 0 issues</p>
     </UpdatesFormContainer>
   );
 }

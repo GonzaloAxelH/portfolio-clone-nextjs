@@ -80,9 +80,11 @@ export default function About({ onToggleTheme }) {
             You can find me on Twitter where I share tech-related tidbits and
             build in public, or you can follow me on GitHub. I often write about
             my findings on my blog and create cool things over on CodePen. I
-            also help run a mediocre podcast.
+            also help run a mediocre podcast.{" "}
           </P>
-
+          <span style={{ color: "red", fontStyle: "italic" }}>
+            * fictitious information for now
+          </span>
           <Space />
           <Title size={36}>Tools</Title>
 

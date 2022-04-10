@@ -92,7 +92,7 @@ export default function Article({
   percentaje,
   level,
 }) {
-  const [tools, setTools] = useState(false);
+  const [tools, setTools] = useState(true);
   const stateApp = {
     development: { name: "Development", color: "#FAA933  " },
     completed: { name: "Completed", color: "#0d9488" },
@@ -114,8 +114,8 @@ export default function Article({
             <div className="hover11">
               <figure>
                 <Image
-                  blurDataURL={`/${state !== "pending" ? urlImg : "build.jpg"}`}
-                  src={`/${state !== "pending" ? urlImg : "build.jpg"}`}
+                  blurDataURL={urlImg}
+                  src={urlImg}
                   alt="name"
                   width="100%"
                   height="140%"

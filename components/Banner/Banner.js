@@ -106,8 +106,12 @@ const Banner = () => {
       </Presentacion>
 
       <ButtonsBanner>
-        <Button type="primary">Read the blog</Button>
-        <Button type="secondary">More about me</Button>
+        <Button onClick={() => router.push("/blog")} type="primary">
+          Read the blog
+        </Button>
+        <Button onClick={() => router.push("/proyects")} type="secondary">
+          A look at my projects
+        </Button>
       </ButtonsBanner>
     </BannerContainer>
   );

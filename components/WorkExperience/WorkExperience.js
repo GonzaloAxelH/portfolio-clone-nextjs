@@ -44,6 +44,7 @@ const WorkExperience = () => {
             2022
           </P>
         </div>
+
         <div className="job pb">
           <P pt="10px" pb="10px">
             Major 4 Apps
@@ -58,6 +59,9 @@ const WorkExperience = () => {
         </div>
 
         <Button type="primary">Read the CV</Button>
+        <span style={{ color: "red", fontStyle: "italic" }}>
+          * fictitious information for now
+        </span>
       </ListJobs>
     </Workexperience>
   );

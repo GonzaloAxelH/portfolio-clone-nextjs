@@ -14,6 +14,8 @@ const Body = styled.body`
   background-repeat: no-repeat;
   background-size: cover;
   &:before {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     content: "";
     position: fixed;
     left: 0;

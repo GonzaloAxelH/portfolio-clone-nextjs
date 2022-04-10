@@ -10,6 +10,7 @@ import RedSocials from "../components/BlogComponents/RedSocials/RedSocials";
 import { Title } from "../components/Titles/Title";
 import Button from "../components/Buttons/Button";
 import P from "../components/Parrafos/P";
+import { useRouter } from "next/router";
 
 const dev = process.env.NODE_ENV !== "production";
 export const server = dev
@@ -42,10 +43,11 @@ const SocialsContainer = styled.div`
   }
 `;
 export default function Home({ onToggleTheme }) {
+  const router = useRouter();
   return (
     <Layout blur={true} onToggleTheme={onToggleTheme}>
       <SocialsContainer>
-        <RedSocials direction="column" />
+        {/*<RedSocials direction="column" />*/}
       </SocialsContainer>
       <HomeContainer>
         <Banner />
@@ -57,12 +59,16 @@ export default function Home({ onToggleTheme }) {
         <P>Check out a few of my most recent publishings.</P>
         <BlogPublishings limit={3} />
 
-        <Button type="primary">See all articles</Button>
+        <Button onClick={() => router.push("/blog")} type="primary">
+          See all publications
+        </Button>
         <Space />
-        <Title size={32}>I love to share my knowledge through writing.</Title>
-        <P>Check out a few of my most recent publishings.</P>
+        <Title size={32}>I love building clones of web applications.</Title>
+        <P>Take a look at some of my recent personal projects.</P>
         <Publishings />
-        <Button type="primary">See all articles</Button>
+        <Button onClick={() => router.push("/proyects")} type="primary">
+          See all proyects
+        </Button>
         <Space />
         <UpdatesFrom />
         <Space />
