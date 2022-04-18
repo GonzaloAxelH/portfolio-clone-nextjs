@@ -28,7 +28,7 @@ const Articles = [
     state: "development",
     percentaje: "50%",
     date: "Mar 29,2022",
-    linkGit: "",
+    linkGit: "https://github.com/GonzaloAxelH/instagram-clone-react-2.0",
     level: "INTERMEDIO",
   },
   {
@@ -45,11 +45,11 @@ const Articles = [
       "Vercel",
     ],
     imgUrl: "/imagesproyect/fastfood-preview.png",
-    link: "https://fastfood-sigma.vercel.app/fastfood",
+    link: "https://fastfoodilo.vercel.app/fastfood",
     percentaje: "48%",
     state: "development",
     level: "AVANCED",
-    linkGit: "#",
+    linkGit: "https://github.com/GonzaloAxelH/fastfood",
     date: "Mar 22, 2022",
   },
   {
@@ -87,7 +87,7 @@ const Articles = [
     level: "JUNIOR",
     state: "completed",
 
-    linkGit: "#",
+    linkGit: "https://github.com/GonzaloAxelH/porfolio-clone-brittany-react",
     date: "Feb 18, 20221",
     percentaje: "100%",
   },
@@ -103,19 +103,6 @@ const Articles = [
     date: "Feb 28,2022",
     linkGit: "#",
     level: "INTERMEDIO",
-  },
-  {
-    id: 6,
-    title:
-      "Fullstack Authentication with Refresh Access Tokens (Node, Next.js, Typescript)",
-    tags: ["Expressjs", "Next.js", "Typescript", "JWT"],
-    imgUrl: "/nodeauth.png",
-    link: "",
-    state: "development",
-    percentaje: "0%",
-    date: "Mar 14,2022",
-    linkGit: "",
-    level: "JUNIOR",
   },
   {
     id: 7,
@@ -134,7 +121,7 @@ const Articles = [
     state: "development",
     percentaje: "0%",
     date: "Mar 16,2022",
-    linkGit: "",
+    linkGit: "#",
     level: "INTERMEDIO",
   },
   {
@@ -159,7 +146,7 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "Mar 31,2022",
-    linkGit: "",
+    linkGit: "#",
     level: "GURU",
   },
   {
@@ -181,8 +168,52 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "April 1,2022",
-    linkGit: "",
+    linkGit: "#",
     level: "AVANCED",
+  },
+  {
+    id: 11,
+    title: "Google Calendar Clone React",
+    tags: [
+      "React",
+      "TypeScript",
+      "Reactjs",
+      "StoryBook(Development components)",
+      "Node.js",
+      "Mongodb",
+      "PostCSS",
+      "Mongoose Avanced",
+      "Testing",
+    ],
+    imgUrl: "/calendar.jpg",
+    link: "#",
+    state: "pending",
+    percentaje: "0%",
+    date: "April 1,2022",
+    linkGit: "#",
+    level: "INTERMEDIO",
+  },
+  {
+    id: 12,
+    title: "Trello Clone React",
+    tags: [
+      "React",
+      "TypeScript",
+      "Reactjs",
+      "StoryBook(Development components)",
+      "Node.js",
+      "Mongodb",
+      "PostCSS",
+      "Mongoose Avanced",
+      "Testing",
+    ],
+    imgUrl: "/trello.jpg",
+    link: "#",
+    state: "pending",
+    percentaje: "0%",
+    date: "April 1,2022",
+    linkGit: "#",
+    level: "INTERMEDIO",
   },
 ];
 export default function Publishings({ limit }) {
@@ -195,6 +226,7 @@ export default function Publishings({ limit }) {
               key={key}
               state={article.state}
               link={article.link}
+              linkGit={article.linkGit}
               tags={article.tags}
               date={article.date}
               percentaje={article.percentaje}

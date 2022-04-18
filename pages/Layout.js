@@ -24,8 +24,8 @@ const Body = styled.body`
     background: url(${(props) => props.theme.bg});
     background-size: cover;
     background-position: 100% 6%;
-    filter: blur(0px);
-    transform: scale(1.1);
+    
+    transform: scale(1.3);
     z-index: -1;
   }
 `;
@@ -44,7 +44,7 @@ const Box = styled.div`
   z-index: -1;
 `;
 const Layout = ({ onToggleTheme, children }) => {
-  const changeFixedScroll = (e) => {};
+  const changeFixedScroll = (e) => { };
   return (
     <div>
       <Head>

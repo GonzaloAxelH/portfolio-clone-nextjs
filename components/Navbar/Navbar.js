@@ -38,13 +38,7 @@ const Navbar = () => {
             </TextLink>
           </a>
         </Link>
-        <Link href="#">
-          <a>
-            <TextLink select={pathName === "/stats"}>
-              Live Coding <Tag>Beta</Tag>
-            </TextLink>
-          </a>
-        </Link>
+
       </ul>
     </Nav>
   );

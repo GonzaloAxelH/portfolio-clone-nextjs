@@ -47,21 +47,10 @@ export default function Home({ onToggleTheme }) {
   return (
     <Layout blur={true} onToggleTheme={onToggleTheme}>
       <SocialsContainer>
-        {/*<RedSocials direction="column" />*/}
+
       </SocialsContainer>
       <HomeContainer>
         <Banner />
-
-        <Space />
-
-        <Title size={32}>I love to share my knowledge through writing.</Title>
-
-        <P>Check out a few of my most recent publishings.</P>
-        <BlogPublishings limit={3} />
-
-        <Button onClick={() => router.push("/blog")} type="primary">
-          See all publications
-        </Button>
         <Space />
         <Title size={32}>I love building clones of web applications.</Title>
         <P>Take a look at some of my recent personal projects.</P>
@@ -70,8 +59,14 @@ export default function Home({ onToggleTheme }) {
           See all proyects
         </Button>
         <Space />
-        <UpdatesFrom />
+        <Title size={32}>I love to share my knowledge through writing.</Title>
+        <P>Check out a few of my most recent publishings.</P>
+        <BlogPublishings limit={3} />
+        <Button onClick={() => router.push("/blog")} type="primary">
+          See all publications
+        </Button>
         <Space />
+        <UpdatesFrom />
         <Footer />
       </HomeContainer>
     </Layout>

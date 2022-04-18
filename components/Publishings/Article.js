@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import CheckIcon from "../Icons/CheckIcon";
+
+import IconGithub from "../Icons/IconGithub";
 import ListTags from "../Tags/ListTags";
 import Link from "next/link";
 const ArticleContainer = styled.div`
@@ -11,6 +13,15 @@ const ArticleContainer = styled.div`
   height: 100%;
   img {
     border-radius: 12px;
+  }
+ .iconGit{
+  a{
+
+    color: ${({ theme }) => theme.colorTextSubtitle};
+  }
+  svg{
+      fill: ${({ theme }) => theme.colorTextSubtitle};
+    }
   }
 `;
 const WrapperImg = styled.div`
@@ -81,6 +92,7 @@ const Show = styled.div`
   font-style: italic;
   color: ${({ theme }) => theme.colorTextSubtitle};
   margin-bottom: 1em;
+ 
 `;
 export default function Article({
   link,
@@ -91,6 +103,7 @@ export default function Article({
   date,
   percentaje,
   level,
+  linkGit
 }) {
   const [tools, setTools] = useState(true);
   const stateApp = {
@@ -138,10 +151,22 @@ export default function Article({
           </Title>
         </a>
       </Link>
-      <Show onClick={() => setTools(!tools)}>Show Tools</Show>
-      {tools ? <ListTags listtags={tags} /> : null}
+
+      <span>
+        <Show onClick={() => setTools(!tools)}>
+          Show Tools
+        </Show>
+        <Link href={linkGit} >
+          <a target="_blank" className="iconGit">
+            <IconGithub />
+          </a>
+        </Link>
+      </span>
+      {!tools ? <ListTags listtags={tags} /> : null}
+
       <ArticleFooter>
         <span>{date}</span>
+
         <Read
           stateColor={
             stateApp[state] ? stateApp[state].color : stateApp[2].color
