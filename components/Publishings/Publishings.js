@@ -94,14 +94,14 @@ const Articles = [
 
   {
     id: 5,
-    title: " Ecomerce Website React, Redux, Expressjs and MongoDB",
-    tags: ["Reactjs", "Redux", "Expressjs", "MongoDB"],
-    imgUrl: "/ecommerce.jpg",
-    link: "#",
-    state: "pending",
-    percentaje: "0%",
-    date: "Feb 28,2022",
-    linkGit: "#",
+    title: "Google Search Clone MultiLanguaje && Images Nextjs ",
+    tags: ["React 18", "Google Cloud", "Google API KEY", "Nextjs"],
+    imgUrl: "/googleclone.jpg",
+    link: "https://googlegonzalo.vercel.app/",
+    state: "development",
+    percentaje: "10%",
+    date: "May 08,2022",
+    linkGit: "https://github.com/GonzaloAxelH/google-search",
     level: "INTERMEDIO",
   },
   {
@@ -121,7 +121,7 @@ const Articles = [
     state: "development",
     percentaje: "0%",
     date: "Mar 16,2022",
-    linkGit: "#",
+    linkGit: "",
     level: "INTERMEDIO",
   },
   {
@@ -146,7 +146,7 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "Mar 31,2022",
-    linkGit: "#",
+    linkGit: "",
     level: "GURU",
   },
   {
@@ -168,7 +168,7 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "April 1,2022",
-    linkGit: "#",
+    linkGit: "",
     level: "AVANCED",
   },
   {
@@ -190,7 +190,7 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "April 1,2022",
-    linkGit: "#",
+    linkGit: "",
     level: "INTERMEDIO",
   },
   {
@@ -212,7 +212,7 @@ const Articles = [
     state: "pending",
     percentaje: "0%",
     date: "April 1,2022",
-    linkGit: "#",
+    linkGit: "",
     level: "INTERMEDIO",
   },
 ];

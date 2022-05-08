@@ -14,12 +14,11 @@ const ArticleContainer = styled.div`
   img {
     border-radius: 12px;
   }
- .iconGit{
-  a{
-
-    color: ${({ theme }) => theme.colorTextSubtitle};
-  }
-  svg{
+  .iconGit {
+    a {
+      color: ${({ theme }) => theme.colorTextSubtitle};
+    }
+    svg {
       fill: ${({ theme }) => theme.colorTextSubtitle};
     }
   }
@@ -92,7 +91,6 @@ const Show = styled.div`
   font-style: italic;
   color: ${({ theme }) => theme.colorTextSubtitle};
   margin-bottom: 1em;
- 
 `;
 export default function Article({
   link,
@@ -103,7 +101,7 @@ export default function Article({
   date,
   percentaje,
   level,
-  linkGit
+  linkGit,
 }) {
   const [tools, setTools] = useState(true);
   const stateApp = {
@@ -153,14 +151,14 @@ export default function Article({
       </Link>
 
       <span>
-        <Show onClick={() => setTools(!tools)}>
-          Show Tools
-        </Show>
-        <Link href={linkGit} >
-          <a target="_blank" className="iconGit">
-            <IconGithub />
-          </a>
-        </Link>
+        <Show onClick={() => setTools(!tools)}>Show Tools</Show>
+        {linkGit !== "" && (
+          <Link href={linkGit}>
+            <a target="_blank" className="iconGit">
+              <IconGithub />
+            </a>
+          </Link>
+        )}
       </span>
       {!tools ? <ListTags listtags={tags} /> : null}
 
