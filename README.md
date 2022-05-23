@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ![Alt text](captura3.png?raw=true "Title")
 
-## Getting Started [https://gonzalo.vercel.app/](https://gonzalo.vercel.app/) LIVE PREVIEW
+## Getting Started [https://gonzalo.vercel.app/](https://gonzaloaxel.com/) LIVE PREVIEW
 
 First, run the development server:
 
