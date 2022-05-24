@@ -11,9 +11,7 @@ const ArticleContainer = styled.div`
   border: none;
   background: transparent;
   height: 100%;
-  img {
-    border-radius: 12px;
-  }
+
   .iconGit {
     a {
       color: ${({ theme }) => theme.colorTextSubtitle};
@@ -24,6 +22,9 @@ const ArticleContainer = styled.div`
   }
 `;
 const WrapperImg = styled.div`
+  img {
+    border-radius: 12px;
+  }
   /* Opacity #1 */
   .hover11 figure img {
     opacity: 1;
@@ -159,6 +160,13 @@ export default function Article({
             </a>
           </Link>
         )}
+        <img
+          onClick={() => alert("Just subscribe")}
+          style={{ marginLeft: "10px", cursor: "pointer" }}
+          width="25px"
+          src="boton-de-play.png"
+          alt="play"
+        />
       </span>
       {!tools ? <ListTags listtags={tags} /> : null}
 
