@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ![Alt text](captura3.png?raw=true "Title")
 
-## Getting Started [https://gonzalo.vercel.app/](https://gonzalo.vercel.app/) LIVE PREVIEW
+## Getting Started [https://gonzaloaxel.com/](https://gonzaloaxel.com/) LIVE PREVIEW
 
 First, run the development server:
 
@@ -50,5 +50,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
