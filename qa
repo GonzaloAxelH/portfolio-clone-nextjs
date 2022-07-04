@@ -1,0 +1,26 @@
+Revert "Nuevo tema y elimnacion dearchivo coker"
+
+This reverts commit cdc1351a61107f83195d373331d89a761eb7a88c.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   components/Banner/Banner.js
+#	modified:   components/BlogComponents/CodeComponent/Code.js
+#	modified:   components/Buttons/Button.js
+#	modified:   components/Header/Header.js
+#	modified:   components/Header/HeaderStyles.jsx
+#	modified:   data/Blogs/index.js
+#	modified:   pages/Layout.js
+#	modified:   pages/index.js
+#	new file:   public/bg-white2.jpg
+#	modified:   public/bg.jpg
+#	new file:   public/imagesblog/restapilaravel/Docker Desktop Installer.exe
+#	modified:   public/imagesblog/restapilaravel/laravel-9-rest-api-example.png
+#	modified:   theme/ThemeConfig.js
+#
