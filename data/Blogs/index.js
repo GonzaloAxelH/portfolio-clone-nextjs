@@ -1,4 +1,3 @@
-import BlogRestApiLaravel9 from "./Blog-rest-api-laravel/Blog";
 import BlogjwtNode from "./Blog-jwt-node/Blog";
 
 export const categorys = {
@@ -14,24 +13,11 @@ export const categorys = {
   PRODUCTIVITY: "Productivity",
   PERSONAL: "Personal",
   WEB3: "Web3",
+
+  LATEX: "LATEX",
 };
 
 export const BlogsWrittings = [
-  {
-    id: "KHQSrInRrzW2PcZZa4dx",
-    title: "API REST Basico en laravel 9 con base de datos Mysql",
-    type: "Tutorial",
-    category: categorys.LARAVEL,
-    date: "Feb 25, 2022",
-    autor: "Gonzalo Axel Valdez",
-    duration: "20 min practica",
-    link: "#",
-    description:
-      "En esta guia se pretende explicar la realizacion de una pequeña api hecha en laravel 9 ...",
-    imgUrl: "/imagesblog/restapilaravel/laravel-9-rest-api-example.png",
-    reactions: [0, 0, 0, 0],
-    blogJsx: BlogRestApiLaravel9,
-  },
   {
     id: "gwergwerfwerfvwefvefefef",
     title: "Autenticando un API Rest con NodeJS y JWT (JSON Web Tokens)",

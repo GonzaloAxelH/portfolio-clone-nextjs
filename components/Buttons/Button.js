@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 const ButtonType = styled.button`
   background: ${(props) => props.background};
-  border: none;
+
+  border: 2px solid ${(props) => props.background};
+
   padding: 16px 48px;
   border-radius: 50px;
   color: ${(props) => props.color};
@@ -39,17 +41,19 @@ const ButtonType = styled.button`
 `;
 export default function Button({ type, children, fSize, onClick }) {
   let backgrounds = {
-    primary: "rgb(30, 41, 59)",
+    primary: "#3c3836",
+
     secondary: " rgb(229, 231, 235)",
   };
   let colors = {
     primary: "#fff",
-    secondary: "rgb(30, 41, 59)",
+
+    secondary: "#3c3836",
   };
   return (
     <ButtonType
       onClick={onClick}
-      fontSize={fSize === "small" ? "16px" : "20px"}
+      fontSize={fSize === "small" ? "15px" : "18px"}
       color={colors[type] ? colors[type] : "#000"}
       background={backgrounds[type] ? backgrounds[type] : ""}
     >

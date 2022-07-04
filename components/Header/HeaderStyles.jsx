@@ -1,9 +1,8 @@
 import styled from "styled-components";
-export const WrapperHeader = styled.header`
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 15px;
 
+export const WrapperHeader = styled.header`  
+  border-radius: 15px;
+  
   position: relative;
   background: transparent;
   display: flex;

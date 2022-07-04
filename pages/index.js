@@ -46,9 +46,6 @@ export default function Home({ onToggleTheme }) {
   const router = useRouter();
   return (
     <Layout blur={true} onToggleTheme={onToggleTheme}>
-      <SocialsContainer>
-
-      </SocialsContainer>
       <HomeContainer>
         <Banner />
         <Space />

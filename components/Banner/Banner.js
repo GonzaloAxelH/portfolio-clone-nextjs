@@ -4,6 +4,8 @@ import Button from "../Buttons/Button";
 import Space from "../Parrafos/Space";
 import { motion } from "framer-motion";
 
+import { useRouter } from "next/router";
+
 const Slogan = styled.h1`
   font-size: 48px;
   font-weight: 800;
@@ -69,6 +71,8 @@ const BannerContainer = styled.div`
   }
 `;
 const Banner = () => {
+  const router = useRouter();
+
   return (
     <BannerContainer>
       <Presentacion>

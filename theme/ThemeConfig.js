@@ -1,14 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 export const lightTheme = {
   colorFondoLabelCode: "#f1f5f9",
-  colorFondoReactions: "#f5f7ff",
+
+  colorFondoReactions: "#DCDCDC",
   colorFondo: "rgb(255, 255, 255)",
   colorFondoBlur: "rgb(255, 255, 255,1)",
-  colorText: "#111827",
+  colorText: "#282828",
   colorTextGray: "#999999",
   colorTextParrafoBlog: "rgb(54, 52, 77)",
-  colorTextBlue: "rgb(17,24,39)",
-  colorHover: "rgb(229, 231, 235)",
+  colorTextBlue: "#282828",
+  colorHover: "#DCDCDC",
+
   colorLink: "rgb(75, 85, 99)",
   colorLinkP: "rgb(15, 23, 42)",
   colorTextSubtitle: "rgb(51, 65, 85)",
@@ -19,13 +21,16 @@ export const lightTheme = {
   colorTurkeza: "#2dd4bf",
   colorTextParrafo: "#111827",
   colorTextParrafo2: "#334155",
-  bg: "/bg-white.jpg",
+
+  bg: "/bg-white2.jpg",
 };
 
 export const darkTheme = {
   colorFondoLabelCode: "#1e293b",
-  colorFondoReactions: "#150023",
-  colorHover: "rgb(30, 41, 59)",
+
+  colorFondoReactions: "#393A3C",
+  colorHover: "#282828",
+
   colorFondo: "rgb(17, 24, 39)",
   colorFondoBlur: "rgb(17, 24, 39,1)",
   colorFondoHeader: "rgba(17, 24, 39, 0.8)",
@@ -36,8 +41,10 @@ export const darkTheme = {
   colorTextBlue: "#fff",
   colorTextGray: "#999999",
   colorTextParrafoBlog: "#999999",
-  colorBorder: "rgb(55, 65, 81)",
-  colorBorder2: "rgb(156, 163, 175)",
+
+  colorBorder: "#282828",
+  colorBorder2: "#",
+
   colorTextSubtitle: "rgb(203, 213, 225)",
   colorTurkeza: "#2dd4bf",
   colorTextParrafo: "#cbd5e1",
