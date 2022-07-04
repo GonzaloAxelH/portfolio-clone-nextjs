@@ -38,19 +38,11 @@ const Header = ({ onToggleTheme }) => {
       <Wrappernavbar>
         <Navbar />
       </Wrappernavbar>
-<<<<<<< HEAD
-
-=======
->>>>>>> master
       <Options>
         <WrapperIcon menu={true} onClick={() => setShowModal(true)}>
           <MenuIcon />
         </WrapperIcon>
-<<<<<<< HEAD
-        <WrapperIcon theme={true} onClick={onToggleTheme}>
-=======
-        <WrapperIcon absolute theme={true} onClick={onToggleTheme}>
->>>>>>> master
+        <WrapperIcon fixed theme={true} onClick={onToggleTheme}>
           <ToogleTheme />
         </WrapperIcon>
       </Options>
